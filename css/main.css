@@ -1,0 +1,217 @@
+* {
+  font-family: 'PT Sans', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.pagecontainer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  text-align: center;
+}
+.float {
+  overflow: hidden;
+}
+header {
+  text-align: center;
+}
+
+.bkgrimg {
+  background-image: url("../img/runner2.jpg");
+  background-size: cover;
+}
+.homepage {
+  padding: 20px 10px;
+  overflow: hidden;
+}
+.info {
+  background: #434547;
+  color: white;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+.download {
+  padding: 40px 10px 20px 10px;
+  overflow: hidden;
+  background: white;
+}
+footer {
+  padding: 10px;
+  background: #434547;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+footer div {
+  margin-bottom: 10px;
+}
+/* typography */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  color:#434547;
+  font-size: 22px;
+}
+h2 {
+  margin: 0;
+  border-top: 1px solid white;
+  padding: 5px 0;
+}
+h3 {
+  margin: 0;
+  padding-bottom: 5px;
+  color: #E90061;
+}
+p {
+  margin: 0;
+  padding: 15px 0;
+}
+footer p {
+  padding: 0;
+}
+/* buttons & links*/
+button {
+  border-style: none;
+  background: #E90061;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: calc(100% - 40px);
+  text-transform: uppercase;
+  margin: 5px 20px;
+  transition: background 0.3s ease-in;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+}
+button:hover {
+  background: #bc0752;
+}
+.info button {
+  width: 60%;
+  margin: 5px 20%;
+}
+button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+/* images */
+img {
+  margin: 5px 20px;
+  padding: 0;
+  width: calc(100% - 40px);
+}
+header img {
+  width: 60%;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+}
+.homepage img {
+  width: 0;
+}
+.icons img {
+  width: 40px;
+  margin: 5px;
+  padding: 0;
+}
+/* lists */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  background: url("../img/tickpink.png") no-repeat left top;
+  height: 30px;
+  background-size: 20px;
+  padding-left: 30px;
+}
+
+/* ---------------media queries--------------- */
+@media (min-width: 640px) {
+  .text {
+    float: left;
+    width: 60%;
+    margin-top: 15%;
+  }
+  .image, .info ul {
+    float: left;
+    width: 40%;
+  }
+  .homepage img {
+    width: 100%;
+    animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .info p {
+    float: left;
+    width: 60%;
+    margin: 0;
+    padding: 0 0 20px 0;
+  }
+  h2 {
+    padding: 10px 0;
+  }
+  .info button {
+    width: 30%;
+    margin: 5px 35%;
+    font-size: 20px;
+  }
+  img {
+    margin: 5px 10px 20px 10px;
+    padding: 0;
+    width: calc(33.333% - 23px);
+  }
+  .address, .openhours, .contact {
+    float: left;
+    width: 33.333%;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    background: #eee;
+  }
+  .pagecontainer{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header img {
+    width: 40%;
+  }
+  h1 {
+    margin-bottom: 30px;
+  }
+  button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  ul {
+    padding-bottom: 20px;
+  }
+  .info {
+    padding: 20px 30px;
+    overflow: hidden;
+  }
+}
